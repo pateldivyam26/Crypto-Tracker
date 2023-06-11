@@ -15,6 +15,10 @@ export default function Navbar() {
       setSymbol("₹");
     else if (currency === "USD")
       setSymbol("$");
+    else if (currency === "EUR")
+    setSymbol("€");
+    else if (currency === "GBP")
+    setSymbol("£");
   }, [currency]);
 
 
@@ -30,6 +34,8 @@ export default function Navbar() {
         value={currency} onChange={(e) => setCurrency(e.target.value)}>
         <option value='INR'> INR (₹) </option>
         <option value='USD'> USD ($) </option>
+        <option value='EUR'> EUR (€) </option>
+        <option value='GBP'> GBP (£) </option>
       </Select>
     </Flex>
   );
