@@ -42,27 +42,27 @@ export default function CoinId() {
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <Card maxW='md'>
-            <CardBody className="shadow-md shadow-white rounded-xl">
+            <CardBody className="shadow-md shadow-white rounded-xl" >
               <Avatar name={coin?.name} src={coin?.image.large} size="2xl" />
 
               <Stack mt='6' spacing='3'>
-                <Heading size='lg' color="white">{coin?.name}</Heading>
-                <Text color="white" fontSize="lg" className="sm:indent-0">
+                <Heading size='lg' color="orange">{coin?.name}</Heading>
+                <Text color="gray-800" fontSize="lg" className="sm:indent-0" fontWeight= "bold">
                   {(coin?.description.en.split(". ")[0])}
                 </Text>
                 <HStack>
-                  <Heading size="lg" color="white"> Rank : </Heading>
-                  <Text fontSize="2xl" fontWeight="normal" color="white" pt="0.3rem">{coin?.market_cap_rank}</Text>
+                  <Heading size="lg" color="black"> Rank : </Heading>
+                  <Text fontSize="2xl" fontWeight="normal" color="gray-800" pt="0.3rem">{coin?.market_cap_rank}</Text>
                 </HStack>
                 <HStack>
-                  <Heading size="lg" color="white"> Current Price : </Heading>
-                  <Text fontSize="2xl" fontWeight="normal" color="white" pt="0.5rem">
+                  <Heading size="lg" color="black"> Current Price : </Heading>
+                  <Text fontSize="2xl" fontWeight="normal" color="gray-800" pt="0.5rem">
                     {symbol}{" "}{(coin?.market_data.current_price[currency.toLowerCase()])}
                   </Text>
                 </HStack>
                 <HStack>
-                  <Heading size="lg" color="white"> Market Cap : </Heading>
-                  <Text fontSize="2xl" fontWeight="normal" color="white" pt="0.5rem">
+                  <Heading size="lg" color="black"> Market Cap : </Heading>
+                  <Text fontSize="2xl" fontWeight="normal" color="gray-800" pt="0.5rem">
                     {" "}{symbol}{" "}{(coin?.market_data.market_cap[currency.toLowerCase()].toString().slice(0, -6))}{" "}M
                   </Text>
                 </HStack>
