@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Crypto-Tracker](https://github.com/pateldivyam26/Crypto-Tracker)
 
-## Getting Started
+Crypto-Tracker is a `Next.js` application that allows users to track real-time details and statistics of the top 100 cryptocurrencies. It utilizes the `CoinGecko API` for fetching cryptocurrency data and displays the information in the form of charts using `Chart.js`. The app features a fully responsive design and utilizes the Context API for state management, along with `Material UI` for creating the user interface.
 
-First, run the development server:
+![ss](https://github.com/pateldivyam26/Crypto-Tracker/assets/79200448/ea48abf1-7103-4e66-9143-eb944335308e)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Real-time details and statistics of the top 100 cryptocurrencies
+- Interactive charts to visualize cryptocurrency data
+- Fully responsive design for optimal viewing on different devices
+- State management using Context API for efficient data handling
+- User-friendly interface created with Material UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```shell
+   git clone https://github.com/pateldivyam26/Crypto-Tracker.git
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```shell
+   cd Crypto-Tracker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install the dependencies:
+
+   ```shell
+   npm install
+   
+4. Start the development server:
+
+   ```shell
+   npm run dev
+
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Technologies Used
+
+- Next.js
+- CoinGecko API
+- Chart.js
+- Context API
+- Material UI
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Deployed Link: https://crypto-tracker-dp.vercel.app
