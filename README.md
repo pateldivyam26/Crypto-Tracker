@@ -8,6 +8,7 @@ Crypto-Tracker is a `Next.js` application that allows users to track real-time d
 
 - Real-time details and statistics of the top 100 cryptocurrencies
 - Interactive charts to visualize cryptocurrency data
+- View cryptocurrency amounts in multiple currencies (INR, USD, EUR, GBP)
 - Fully responsive design for optimal viewing on different devices
 - State management using Context API for efficient data handling
 - User-friendly interface created with Material UI
